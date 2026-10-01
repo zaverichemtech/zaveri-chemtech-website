@@ -70,12 +70,46 @@
     }
 
     .brand span { color: var(--teal); }
-.brand-logo {
-  display: block;
-  width: 240px;
-  height: 80px;
-  object-fit: contain;
-  object-position: left center;
+.
+/* Header logo */
+header .brand-logo {
+    display: block;
+    width: 250px;
+    height: 80px;
+    object-fit: contain;
+    object-position: left center;
+    flex-shrink: 0;
+}
+
+/* Footer logo */
+footer .brand-logo {
+    display: block;
+    width: 140px;
+    height: 75px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+/* Tablet and mobile */
+@media (max-width: 850px) {
+    header .brand-logo {
+        width: 200px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    header .brand-logo {
+        width: 165px;
+        height: 60px;
+    }
+
+    footer .brand-logo {
+        width: 125px;
+        height: 65px;
+    }
+}
+
 }
     .nav-links {
       display: flex;
