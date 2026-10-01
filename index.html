@@ -70,7 +70,13 @@
     }
 
     .brand span { color: var(--teal); }
-
+.brand-logo {
+  display: block;
+  width: 190px;
+  height: 65px;
+  object-fit: contain;
+  object-position: left center;
+}
     .nav-links {
       display: flex;
       align-items: center;
@@ -458,7 +464,9 @@
 
 <header>
   <div class="container nav">
-    <a class="brand" href="#">ZAVERI <span>ChemTech</span></a>
+    <a class="brand" href="#">
+  <img src="zaveri-chemtech-logo.png" alt="Zaveri ChemTech" class="brand-logo">
+    </a>
     <nav class="nav-links">
       <a href="#about">About</a>
       <a href="#expertise">Expertise</a>
@@ -647,7 +655,9 @@
 <footer>
   <div class="container footer-inner">
     <div>
-      <div class="brand">ZAVERI <span>ChemTech</span></div>
+      <div class="brand">
+  <img src="zaveri-chemtech-logo.png" alt="Zaveri ChemTech" class="brand-logo">
+      </div>
       <p>Specialty Chemicals. Global Solutions.</p>
     </div>
     <p>© <span id="year"></span> Zaveri ChemTech. All rights reserved.</p>
